@@ -1,0 +1,291 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	box-sizing: border-box;
+	font-family: Roboto, sans-serif;
+	color: #FFF;
+}
+html{
+	scroll-behavior: smooth;
+}
+/*.test{
+	height: 100vh;
+	border: 2px solid red;
+}*/
+
+              /* top nav bar */
+#nav-bar{
+	background-color: #282828;
+	height: 12vh;
+	padding: 25px 150px;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+#nav-bar-content{
+	float: right;
+}
+#About{font-weight: 300; color: #2DCC32}
+#nav-bar-content a{margin-left: 20px;}
+
+
+  
+
+                   /*********** About Page **************/
+.sec1{
+/* min-height: 88vh; */
+background-color: #181818;
+padding-top: 8vh;
+padding-bottom: 1vh; /* as 5vh is due to down arrow and other 2 is down arrow margin-top, 1+5+2=8*/
+}
+				
+#greet{
+	position: relative;
+	clear: both;
+    margin-bottom: 8vh;
+	font-size: 8em;
+	/* font-size: 1em; */
+	text-align: center;
+	font-weight: 400;
+}
+
+#intro{
+	/* position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); tranlation in (X,Y) directions, 100% is dimension of element itself */
+	
+	width: 80%;
+	margin:0 10%;
+	margin-bottom: 5%;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 100;
+
+}
+.btn_box{
+	margin: 0 40% 0 40%;  /* as button is table-cell, margins don't apply. so we're centering parent div */
+}
+#cv_btn{
+	display: table-cell; /* did to make vertical align work */
+	text-align: center;
+	vertical-align: middle;
+	min-width: 20vw;
+	height: 10vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	border-radius: 4px;
+	background-color: #28A62C;
+	font-size: 2em;
+}
+.arrow_box{
+	margin-top: 2vh;
+}
+#arrow_img{
+	height:5vw;
+	margin-left: 7.5vw;
+}
+#arrow_img:hover{
+	cursor: pointer;
+    position: relative;
+	transform: scale(1.3);
+}
+
+
+                      /******   PPROJECTS  SECTION  ******/
+.sec2{
+	position: relative;
+	background-color: #282828;
+	padding: 8vh 10% ;
+}
+
+/* .sub_heading{
+	font-size: 50px;
+	font-weight: 500;
+	color: #2DCC32;
+	margin-bottom: 55px;
+} */
+.sub_heading{
+	font-size: 2.2em;
+	font-weight: 500;
+	color: #2DCC32;
+	margin-bottom: 6vh;
+}
+
+.project_title{
+	font-size: 1.8em;
+	margin-bottom: 10px;	
+}
+.project_box{
+	/* position: relative; */
+	height: auto;
+	background-color: #181818;
+	border-radius: 7px;
+	padding: 15px 15px 10px 15px;
+	margin-bottom: 6vh;
+	overflow: hidden;
+}
+.image_box{
+	overflow: hidden;
+	float:left;
+	width: 200px;
+	height: 200px;
+	background-color: gray;
+	border-radius: 7px;
+	margin-right: 15px;
+	margin-bottom: 5px;
+}
+.image_box .image {
+	border-radius: 7px;
+}
+.project_text{
+	min-height: 135px;
+	/* margin-left: 266px; */
+	font-size: 1.5em;
+	font-weight: 200;
+}
+.project_git_btn{
+ /* clear: left; */
+ float: right;
+ /* position: absolute; */
+ /* left: 22px;
+ bottom: 22px; */
+ /* margin-left: 100%;
+ transform: translate(-100%,0); */
+ margin-top: 15px;
+ background-color: #28A62C;
+ width: 200px;
+ height: 50px;
+ border-radius: 7px;
+ line-height: 50px;
+ text-align: center;
+ /* vertical-align: middle; */
+ font-size: 1.8em;
+ 
+}
+                   /********** SKILLS  SECTION  ********/
+.sec3{
+
+	background-color: #181818;
+	padding: 8vh 10% ;
+}
+.skill_type{
+	margin-top: 55px;
+	margin-bottom: 10px;
+	font-size: 1.8em;
+}
+
+.skill_box{  /* contains icon and skill name */
+	display: inline-block;
+	padding: 10px 10px 10px 0px;
+	position: relative;
+	width: 100px;
+	margin-right: 10px;
+}
+
+.skill_image{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0);
+	height: 80px;
+	border-radius: 50%;
+	border: 3px solid;
+
+}
+.skill_name{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 250;
+}
+
+#cpp{border-color: #01559D;}
+#c{border-color: #5C6BC0;}
+#js{border-color: #D6BA32;}
+#mysql{border-color: #5D87A1;}
+#firebase{border-color: #FDC529;}
+#illustrator{border: none;}
+#xd{border:none;}
+#figma{border-color: #A259FF;}
+#photoshop{border:none;}
+#blender{border-color: #EA882B;}
+#html{border-color: #E34F26;}
+#css{border-color: #0277BD;}
+
+#blndr{margin-left: 10px;}
+                    /***********   CONTACT   SECTION  ********/
+.sec4{
+background-color: #282828;
+padding: 8vh 10% ;
+}
+.contact_box{  /* contains icon and skill name */
+	display: inline-block;
+	padding: 10px 10px 10px 0px;
+	position: relative;
+	width: 80px;
+	margin-right: 10px;
+}
+.contact_image{
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0);
+	height:60px;
+	border-radius: 50%;
+	/* border: 2px solid; */
+}
+.contact_name{
+	text-align: center;
+	font-size: 1em;
+	font-weight: 250;
+}
+.contact_box:hover{
+	position: relative;
+	transform: scale(1.2);
+}
+/* #cont_mail{border-color: #AC3931;}
+#cont_in{border-color: #0076B4;}
+#cont_fb{border-color: #3A589B;}
+#cont_git{border-color: #000;} */
+
+a{
+	text-decoration: none;
+}
+                    /********  Copyright Section  ****/
+.bottom{
+	background-color: #181818;
+	padding: 2vh 0;
+
+}
+.bottom >div{
+	font-size: 1.2em;
+	font-weight: 100;
+	text-align: center;
+}
+
+                              /** extra formatting **/
+.button:hover{
+   background-color: #086e0b !important;
+   cursor: pointer !important;
+}
+
+/* #nav-bar-content :hover{
+   cursor: pointer;
+}
+#Projects:hover{color: #89be8b;}
+#Skills:hover{color: #89be8b;}
+#Contact:hover{color: #89be8b;} */
+
+#nav-bar-content a:hover{
+	color:#2DCC32;
+	cursor: pointer;
+}
+
+/**************       FOR   MOBILE   DISPLAY       ****************/
+
+@media (max-width: 767px) {
+
+/*** NAVBAR**/
+
+
+
+}
