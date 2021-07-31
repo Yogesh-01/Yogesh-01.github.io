@@ -29,6 +29,10 @@
 			<a id="Contact" href="#contact_section">Contact</a>
 		</div>
 	</nav>
+
+	<nav id="nav-phone">
+		
+	</nav>
 </header>
                  <!------ About Section ------->
 
@@ -36,6 +40,9 @@
 		<div id="greet">
 			Hi, I'm 
 			<span class="txt-rotate" data-period="2000" data-rotate='[ "Yogesh", "a Designer.", "a Coder.", "a Learner." ]'></span>
+		</div>
+		<div id="greet-mobile">
+			Hi, I'm Yogesh
 		</div>
 		<div id="intro">
 			I am Yogesh , currently a sophomore at IIT (ISM) Dhanbad in Computer Science and Engineering. Interested in Web Development and Designing I keep tinkering with stuffs. With no expertise in particular field ,  I find myself among people who love being jack of all trades.
@@ -59,25 +66,45 @@
 	<section id="project_section" class="sec2">
 		<div class="sub_heading">Projects</div>
 
-		<div class="project_title">Imaginary 1</div>
+		<div class="project_title">Match The Tiles</div>
 		<div class="project_box">
 			<div class="image_box"> 
-				<img class="image"src="images/project1image.jpg" alt="proj1 image" height="200px">
+				<img class="image"src="images/proj1.png" alt="proj1 image" height="200px">
 				
 			</div>
-			<p class="project_text">This section refers to digtal entities (non-existent) which could have existed if the person associated with 
-				had intention (even the slightest) of actually working instead of daydreaming about successful projects. At this point he is using 
-			most important part of portfolio page as fancy lorem ipsum.</p>
-			<div class="project_git_btn button">Github</div>
+			<p class="project_text">A front end browser mini game made using CSS and vanilla JavaScript.<br>
+				The player is presented with a grid of images which
+				can be revealed by clicking on it. The goal is to match
+				similar images.
+				Used a list of pre-loaded images which are shuffled on each new iteration of game.
+			    <br>
+				<strong>Technology Used:</strong> HTML, CSS, JavaScript <br>
+			
+			</p>
+			
+			<div id="proj1git" class="project_git_btn button" 
+			onclick="window.open('https://github.com/Yogesh-01/Match-The-Tiles', '_blank').focus();" >Github</div> <!-- to open url iin new tab-->
+			<div id="proj1prev" class="project_prev_btn button" onclick="window.open('https://yogesh-01.github.io/Match-The-Tiles/', '_blank').focus();">Preview</div>
 		</div>
 
-		<div class="project_title">Imaginary 2</div>
+		<div class="project_title">Notes Plus</div>
 		<div class="project_box">
 			<div class="image_box"> 
-				<img class="image"src="images/project2image.jpg" alt="proj2 image" height="200px">
+				<img class="image"src="images/proj2.png" alt="proj2 image" height="200px">
 			</div>
-			<p class="project_text">This is one of the imaginary things I usually visualise while going to sleep or showering. No ground reality, just a wishlist with zero progress done in directionsleep or showering. No ground reality, just a wishlist with zero progress done in direction.</p>
-			<div class="project_git_btn button">Github</div>
+			<p class="project_text">A fully responsive web app capable of
+				storing text notes in browser storage.<br>
+				Ahich retains data after browser reloads.<br>
+				Used front end technologies like bootstrap and logic
+				building by javascript. Used browser local storage for
+				storing data.
+				<br>
+				<strong>Technology Used:</strong> HTML, CSS, JavaScript, Bootstrap<br>
+			
+			</p>
+			
+			<div id="proj2git" class="project_git_btn button" onclick="window.open('https://github.com/Yogesh-01/Note-Taking-App', '_blank').focus();">Github</div>
+			<div id="proj2prev" class="project_prev_btn button" onclick="window.open('https://yogesh-01.github.io/Note-Taking-App/', '_blank').focus();">Preview</div>
 		</div>
 	</section>
 
@@ -105,11 +132,52 @@
 		</div>
 
 
+
+		<div class="skill_type">Development</div>
+		<div class="skill_box">
+			<img class="skill_image" id="html" src="icons/html.png" alt="html icon" height="124px">
+			<div class="skill_name">
+				HTML
+			</div>
+		</div>
+		<div class="skill_box">
+			<img class="skill_image" id="css" src="icons/css.png" alt="css icon" height="124px">
+			<div class="skill_name">
+				CSS
+			</div>
+		</div>
+		<div class="skill_box">
+			<img class="skill_image" id="js" src="icons/js.png" alt="css icon" height="124px">
+			<div class="skill_name">
+				JS
+			</div>
+		</div>
+		<div class="skill_box">
+			<img class="skill_image" id="jquery" src="icons/jquery.png" alt="css icon" height="124px">
+			<div class="skill_name">
+				jQuery
+			</div>
+		</div>
+		<div class="skill_box">
+			<img class="skill_image" id="bootstrap" src="icons/bootstrap.png" alt="css icon" height="124px">
+			<div class="skill_name">
+				Bootstrap
+			</div>
+		</div>
+
+
+
 		<div class="skill_type">Database</div>
 		<div class="skill_box">
 			<img class="skill_image" id="mysql" src="icons/mysql.png" alt="MySql icon" height="124px">
 			<div class="skill_name">
 				MySql
+			</div>
+		</div>
+		<div class="skill_box">
+			<img class="skill_image" id="mongodb" src="icons/mongodb.png" alt="Firebase icon" height="124px">
+			<div class="skill_name">
+				MongoDB
 			</div>
 		</div>
 		<div class="skill_box">
@@ -119,6 +187,22 @@
 			</div>
 		</div>
 
+
+		<div class="skill_type">Version Control</div>
+		<div class="skill_box">
+			<img class="skill_image" id="git" src="icons/git.png" alt="MySql icon" height="124px">
+			<div class="skill_name">
+				Git
+			</div>
+		</div>
+		<div class="skill_box">
+			<img class="skill_image" id="githubico" src="icons/githubico.png" alt="Firebase icon" height="124px">
+			<div class="skill_name">
+				GitHub
+			</div>
+		</div>
+	
+    
 
 		<div class="skill_type">Designing</div>
 		<div class="skill_box">
@@ -151,22 +235,6 @@
 				Blender
 			</div>
 		</div>
-
-
-		<div class="skill_type">Others</div>
-		<div class="skill_box">
-			<img class="skill_image" id="html" src="icons/html.png" alt="html icon" height="124px">
-			<div class="skill_name">
-				HTML
-			</div>
-		</div>
-		<div class="skill_box">
-			<img class="skill_image" id="css" src="icons/css.png" alt="css icon" height="124px">
-			<div class="skill_name">
-				CSS
-			</div>
-		</div>
-    
 	</section>
 
 	            <!--*******    CONTACT   SECTION  *********-->
@@ -181,15 +249,6 @@
 			</div>
 		</a>
 
-		<a id="facebook" href="https://www.facebook.com/profile.php?id=100041963386167" target="_blank">
-			<div class="contact_box">
-				<img class="contact_image" id="cont_fb" src="icons/fb_black.svg" alt="facebook" height="124px">
-				<div class="contact_name">  <!-- made it take skill class due to laziness -->
-					FaceBook
-				</div>
-			</div>
-		</a>
-
 		<a id="github" href="https://github.com/Yogesh-01" target="_blank">
 			<div class="contact_box">
 				<img class="contact_image" id="cont_git" src="icons/github_black.svg" alt="Github" height="124px">
@@ -199,6 +258,17 @@
 			</div>
 		</a>
 
+
+		<a id="facebook" href="https://www.facebook.com/profile.php?id=100041963386167" target="_blank">
+			<div class="contact_box">
+				<img class="contact_image" id="cont_fb" src="icons/fb_black.svg" alt="facebook" height="124px">
+				<div class="contact_name">  <!-- made it take skill class due to laziness -->
+					FaceBook
+				</div>
+			</div>
+		</a>
+
+
 		<a id="Gmail" href="mailto: yogeshkumar7689@gmail.com" target="_blank">
 			<div class="contact_box">
 				<img class="contact_image" id="cont_mail" src="icons/email_black.svg" alt="Gmail" height="124px">
@@ -207,12 +277,18 @@
 				</div>
 			</div>
 		</a>
+
+		<a id="to_top" href="#nav-bar">
+			<div class="arrow_box_2">
+			<img id="top" src="icons/arrow-up.png" height="60px">
+			</div>
+		</a>
         
 	</section>
 	                                  <!--*******    Bottom Line  *********-->
 	<section class="bottom">
 		<div>
-			&copy2020 Made by following <a href="https://github.com/roeticvampire" target="blank">captain's </a> trail marks
+			&copy2020 Made by following <a id="captain" href="https://github.com/roeticvampire" target="blank">captain's </a> footsteps
 		</div>
 	</section>
 

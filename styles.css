@@ -39,12 +39,21 @@ background-color: #181818;
 padding-top: 8vh;
 padding-bottom: 1vh; /* as 5vh is due to down arrow and other 2 is down arrow margin-top, 1+5+2=8*/
 }
-				
+#greet-mobile{
+	display: none;
+	position: relative;
+	clear: both;
+    margin-bottom: 8vh;
+	font-size: 6rem;
+	/* font-size: 1em; */
+	text-align: center;
+	font-weight: 400;
+}			
 #greet{
 	position: relative;
 	clear: both;
     margin-bottom: 8vh;
-	font-size: 8em;
+	font-size: 8rem;
 	/* font-size: 1em; */
 	text-align: center;
 	font-weight: 400;
@@ -77,7 +86,7 @@ padding-bottom: 1vh; /* as 5vh is due to down arrow and other 2 is down arrow ma
 	padding-right: 2vw;
 	border-radius: 4px;
 	background-color: #28A62C;
-	font-size: 2em;
+	font-size: 2rem;
 }
 .arrow_box{
 	margin-top: 2vh;
@@ -129,7 +138,7 @@ padding-bottom: 1vh; /* as 5vh is due to down arrow and other 2 is down arrow ma
 .image_box{
 	overflow: hidden;
 	float:left;
-	width: 200px;
+	/*width: 200px;*/
 	height: 200px;
 	background-color: gray;
 	border-radius: 7px;
@@ -164,6 +173,21 @@ padding-bottom: 1vh; /* as 5vh is due to down arrow and other 2 is down arrow ma
  font-size: 1.8em;
  
 }
+.project_prev_btn{
+	margin-right: 15px;
+	float: right;
+	margin-top: 15px;
+	background-color: #28A62C;
+	width: 200px;
+	height: 50px;
+	border-radius: 7px;
+	line-height: 50px;
+	text-align: center;
+	/* vertical-align: middle; */
+	font-size: 1.8rem;
+	
+   }
+
                    /********** SKILLS  SECTION  ********/
 .sec3{
 
@@ -211,9 +235,17 @@ padding-bottom: 1vh; /* as 5vh is due to down arrow and other 2 is down arrow ma
 #blender{border-color: #EA882B;}
 #html{border-color: #E34F26;}
 #css{border-color: #0277BD;}
+#mongodb{border-color: #029702;}
+#jquery{border-color: #dbdbdb;}
+#bootstrap{border-color: #d2d3d2;}
+#git{border-color: #bd5806;}
+#githubico{border-color: #dbdbdb;}
 
 #blndr{margin-left: 10px;}
                     /***********   CONTACT   SECTION  ********/
+#contact_section{
+	position: relative;
+}
 .sec4{
 background-color: #282828;
 padding: 8vh 10% ;
@@ -250,6 +282,17 @@ padding: 8vh 10% ;
 a{
 	text-decoration: none;
 }
+
+#to_top{
+	position: absolute;
+	right: 10%;
+	bottom: 8vh;
+}
+.arrow_box_2:hover{
+	position: relative;
+	transform: scale(1.2);
+}
+
                     /********  Copyright Section  ****/
 .bottom{
 	background-color: #181818;
@@ -261,7 +304,9 @@ a{
 	font-weight: 100;
 	text-align: center;
 }
-
+#captain:hover{
+	color: #2DCC32;
+}
                               /** extra formatting **/
 .button:hover{
    background-color: #086e0b !important;
@@ -285,7 +330,65 @@ a{
 @media (max-width: 767px) {
 
 /*** NAVBAR**/
-
-
-
+#nav-bar{
+	display: none;
+}
+#greet{
+	display: none;
+}
+#greet-mobile{
+	display: block;
+}
+#cv_btn{
+	font-size: 1.3rem;
+}
+#intro{
+	font-size: 1.5rem;
+}
+.sub_heading{
+	font-size: 1.8rem;
+}
+.project_title{
+	font-size: 1.4rem;
+}
+.project_text{
+	font-size: 1.3rem;
+}
+.project_prev_btn, .project_git_btn{
+	font-size: 1.2rem;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+}
+.skill_type{
+	font-size: 1.4rem;
+}
+.skill_name{
+	font-size: 1rem;
+}
+.skill_image{
+	height: 50px;
+	border:2px solid;
+}
+.skill_box{
+	margin-right:2px;
+	padding: 5px;
+	width: 80px;
+}
+.contact_image{
+	height: 40px;
+}
+.contact_box{
+	padding: 5px;
+	margin-right: 0px;
+}
+#blndr{
+	margin-left: 0px;
+}
+#top{
+	display: none;
+}
+.bottom{
+	font-size: 0.6rem;
+}
 }
