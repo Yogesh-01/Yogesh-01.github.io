@@ -188,6 +188,27 @@ padding-bottom: 1vh; /* as 5vh is due to down arrow and other 2 is down arrow ma
 	
    }
 
+   /* read more button */
+   .invisible{
+	   display: none;
+   }
+   .read_more_box{
+	   position: relative;
+   }
+   .read_more{
+	   color: #d2d3d2;
+	   font-size: 1.4rem;
+	   position: absolute;
+	   right: 0;
+   }
+   .read_more:hover{
+	   color: #2DCC32;
+	   cursor: pointer;
+   }
+   
+
+
+
                    /********** SKILLS  SECTION  ********/
 .sec3{
 

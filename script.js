@@ -1,3 +1,5 @@
+/** Text Carousel */
+
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -55,4 +57,26 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-document.body.style.zoom = (window.innerWidth / window.outerWidth)
+//document.body.style.zoom = (window.innerWidth / window.outerWidth)
+
+
+/** Read more button */
+
+let content = document.getElementsByClassName('extras');
+let l=content.length;
+let button = document.getElementById('read_more_txt');
+
+
+button.addEventListener('click', function(){
+  for(i=0;i<l;i++){
+    content[i].classList.toggle('invisible');
+  }
+  if(button.textContent==="load more" && content[0].classList.contains('invisible')==false){
+    button.textContent="load less"
+  }
+  else if(button.textContent==="load less" && content[0].classList.contains('invisible')){
+    button.textContent="load more"
+  }
+    
+    
+});
